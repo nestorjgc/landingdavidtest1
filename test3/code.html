@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#ffffff",
+              "secondary-container": "#f0e1c7",
+              "surface-tint": "#465f88",
+              "surface-container-high": "#dbeaf9",
+              "surface-container-low": "#ecf4ff",
+              "outline": "#74777f",
+              "tertiary-fixed": "#d0e4ff",
+              "surface-dim": "#cddceb",
+              "primary-fixed": "#d6e3ff",
+              "on-secondary-fixed-variant": "#4f4633",
+              "surface-variant": "#d6e4f3",
+              "primary": "#002046",
+              "tertiary-fixed-dim": "#9ccaff",
+              "surface-container-highest": "#d6e4f3",
+              "on-background": "#0f1d28",
+              "outline-variant": "#c4c6cf",
+              "on-tertiary-fixed-variant": "#00497a",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed": "#001b3d",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "secondary": "#685d49",
+              "on-primary-container": "#87a0cd",
+              "primary-container": "#1b365d",
+              "surface-bright": "#f6f9ff",
+              "secondary-fixed-dim": "#d3c5ac",
+              "on-tertiary-container": "#64a3e2",
+              "surface-container": "#e1f0ff",
+              "on-secondary-fixed": "#221b0b",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed": "#001d35",
+              "tertiary-container": "#00385f",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#f0e1c7",
+              "background": "#f6f9ff",
+              "on-secondary-container": "#6e634f",
+              "tertiary": "#00223d",
+              "on-primary-fixed-variant": "#2e476f",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#0f1d28",
+              "error": "#ba1a1a",
+              "on-surface-variant": "#44474e",
+              "primary-fixed-dim": "#aec7f7",
+              "surface": "#f6f9ff",
+              "inverse-on-surface": "#e6f2ff",
+              "inverse-primary": "#aec7f7",
+              "inverse-surface": "#24323d"
+            },
+            fontFamily: {
+              "headline": ["Work Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Work Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-blue-950 uppercase">
+                Gulf Coast
+            </div>
+<div class="hidden md:flex items-center gap-8 font-['Work_Sans'] font-medium tracking-tight">
+<a class="text-blue-900 font-bold border-b-2 border-blue-900 pb-1" href="#">Home</a>
+<a class="text-slate-600 hover:text-blue-800 transition-colors" href="#">Products</a>
+<a class="text-slate-600 hover:text-blue-800 transition-colors" href="#">About</a>
+<a class="text-slate-600 hover:text-blue-800 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-surface-container-high px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-on-surface-variant text-sm mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48 font-label tracking-wide" placeholder="Search Inventory..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 font-bold text-sm tracking-tight rounded-md hover:opacity-90 active:scale-[0.99] transition-all">
+                    Get a Quote
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="dramatic wide shot of a high-tech logistics hub at twilight with massive blue cargo containers and glowing industrial lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqkYXACeMOpWHcYod9d8ZIXSApLMMTKV-kKmZ7Tq1C1vG3Q2PsN_LZlMCYmNFvReguncKOb5eTz72Eodxag0DZ2zZumvI1n8ELVexqC12mzXCaC9e-3pekMLU5fQRCz5mooHDlyDrAHLMtHbWti1q6IvD9P-_IP5poXuu_CDxj3gYfNh3TWeWPSCvnQq-W2hGthkwNt_KHFhdURe4HuiUmNdBqVi3PYIRvT5U1ht5-BdGapGhDIU33vqjddfS0R249bCnWKEx3HpA"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-screen-2xl mx-auto px-12">
+<div class="max-w-2xl">
+<div class="mb-6 flex items-center gap-3">
+<span class="w-12 h-1 bg-secondary"></span>
+<span class="text-secondary font-label font-bold uppercase tracking-widest text-sm">Industrial Precision</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-extrabold text-white leading-[0.95] tracking-tighter mb-8">
+                        THE HORIZON <br/>OF LOGISTICS.
+                    </h1>
+<p class="text-xl text-on-primary-container font-body leading-relaxed mb-10 max-w-lg">
+                        Bridging the gap between heavy industry and coastal precision with reliable, efficient distribution solutions across the Gulf region.
+                    </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-secondary-fixed text-on-secondary-fixed px-10 py-5 font-bold uppercase tracking-tighter hover:bg-white transition-all">
+                            View Inventory
+                        </button>
+<button class="flex items-center gap-3 text-white font-bold hover:translate-x-2 transition-transform">
+<span class="text-lg">Our Capability Report</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="bg-surface-container-low py-20">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="flex flex-col gap-2">
+<span class="text-6xl font-black text-primary tracking-tighter">98%</span>
+<span class="text-sm font-label uppercase tracking-widest text-secondary font-bold">On-Time Delivery Rate</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-6xl font-black text-primary tracking-tighter">450k</span>
+<span class="text-sm font-label uppercase tracking-widest text-secondary font-bold">Sq Ft Warehouse Space</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-6xl font-black text-primary tracking-tighter">24/7</span>
+<span class="text-sm font-label uppercase tracking-widest text-secondary font-bold">Supply Chain Support</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products (Bento Grid) -->
+<section class="py-32 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-xl">
+<h2 class="text-5xl font-extrabold text-primary tracking-tighter mb-6">INDUSTRIAL CORE</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">Essential logistics and heavy-duty components engineered for the harshest coastal environments. We stock the parts that keep the Gulf moving.</p>
+</div>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-secondary hover:border-secondary transition-all" href="#">Explore Full Catalog</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[800px]">
+<!-- Large Feature -->
+<div class="md:col-span-8 bg-surface-container-lowest overflow-hidden group relative">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="high-detail close up of machined steel industrial valves with clean blue and metallic reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6Gp_o-fWekO2PWRRwgpWQl_MOupsJ1ZNqfpHyeB9LoQit9nXXnshqUai92ddsNqye9UuleAZBaJ-wn6vnzOUZKfAMxvcG4RMGCU7_u-dxawhrzQ2ONiDcPsUANKkkbDxOPlB3mlCa8811qyb4hNrstDR4IWiOZhoScJFNO_RTaGNEzCOAZmv0mJnOH__Ih89nxyVvMWtLyGzT5LtVzIrDZ_BGk5wHz3EHLsU-p7HZc0uSoMlu65Hcl2WuWjqOm71kGNlYnELtpxk"/>
+<div class="absolute bottom-0 left-0 p-12 bg-gradient-to-t from-primary/90 to-transparent w-full">
+<span class="text-secondary-fixed font-label text-xs font-bold uppercase tracking-widest mb-2 block">Heavy Equipment</span>
+<h3 class="text-4xl font-bold text-white mb-4">Precision Valves &amp; Seals</h3>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-6 py-2 text-sm font-bold uppercase">Details</button>
+</div>
+</div>
+<!-- Small Vertical -->
+<div class="md:col-span-4 bg-secondary-container p-12 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-5xl mb-8">conveyor_belt</span>
+<h3 class="text-3xl font-bold text-primary mb-4 leading-tight">Automated Sorting Systems</h3>
+<p class="text-secondary font-medium">Next-gen distribution technology for high-volume throughput and zero-error processing.</p>
+</div>
+<div class="border-t border-primary/10 pt-8">
+<span class="text-xs font-label uppercase font-bold tracking-tighter text-primary">Status: In Stock</span>
+</div>
+</div>
+<!-- Small Horizontal -->
+<div class="md:col-span-4 bg-surface-container-high p-12 flex flex-col justify-center">
+<h3 class="text-2xl font-bold text-primary mb-2">Maritime Lubricants</h3>
+<p class="text-on-surface-variant text-sm mb-6">Corrosion-resistant formulas for offshore and coastal machinery.</p>
+<span class="text-primary font-bold text-lg">From $124.00</span>
+</div>
+<!-- Medium Feature -->
+<div class="md:col-span-8 bg-primary relative overflow-hidden flex items-center px-12 py-16">
+<div class="max-w-md relative z-10">
+<h3 class="text-4xl font-bold text-white mb-6">Bulk Storage &amp; Palletizing</h3>
+<p class="text-on-primary-container text-lg mb-8">Heavy-duty structural racking designed for maximum density and accessibility.</p>
+<button class="bg-secondary text-on-secondary px-8 py-4 font-bold uppercase text-xs tracking-widest">Inquiry</button>
+</div>
+<img class="absolute right-0 top-0 h-full w-1/2 object-cover opacity-50 mix-blend-overlay" data-alt="abstract view of orange and blue industrial shipping crates stacked in a geometric pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_H7tGt3IMNlGMXhbt-4iF6aXftZR81EmzZHn4dzpGm6UoInYyVBPd0IArIrKU0xh-E3US4bpMeI2IO2q_vhgGrGU111zX0-hc5qOe5Gp_LwobRoleS0-2u8CO5rfD9A8SCCZTVuj4kLMj2kf26j1NTJemx9ssTkpVRVUYDGG73Qq9cAIBTwXPcszzMpek53vX2ofEXVGEJZ2-GRwF9CnBC6_4GL17CFuKcq8r15oX23e-SSuDDDyZVDMk_Hne6GfRxU1YbvjwZiM"/>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="bg-surface-container-lowest py-32 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-surface-container rounded-full opacity-50 blur-3xl"></div>
+<img class="relative z-10 w-full h-[600px] object-cover shadow-2xl" data-alt="panoramic clean beach with clear blue water and white sand reflecting a bright morning sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtq0Un1z-rrZA9BgqiBtI0cjgrqI6wa-c0C1EuNq8VgmK3rhBvKF5YDzxycpAd4xv6znLTGTNQFtKm0VywAfBpkoqnck7HWmJtqfkJkwwrLUS0VqULOIs9ErwR20y93YFAzTl0bF-wUwTiP77FSEN1Fn9WK7SA_2sgCt1Fg8q8eLEGcGXFpdsxHjANPu3gTilHEwbCQS7MQfccdcSVqxQB9BB-c0P77_4n2XDFH4FJzb73kPnCMiF6eeoNVHIzM_BGl5zRWjRQLXY"/>
+<div class="absolute -bottom-10 -right-10 bg-primary p-12 text-white z-20 max-w-xs">
+<h4 class="text-lg font-bold uppercase tracking-widest mb-4">Founded 1984</h4>
+<p class="text-sm text-on-primary-container leading-relaxed">Starting with a single truck in Mobile, Alabama, we've grown into the Gulf's most trusted partner.</p>
+</div>
+</div>
+<div>
+<span class="text-secondary font-label font-bold uppercase tracking-[0.3em] text-xs mb-6 block">Our Legacy</span>
+<h2 class="text-5xl font-extrabold text-primary tracking-tighter mb-8 leading-none">THE INDUSTRIAL <br/>PULSE OF THE COAST.</h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed font-body">
+<p>Gulf Coast Distribution was built on the principle that logistics is the backbone of progress. For four decades, we have served the maritime, petroleum, and manufacturing sectors with unwavering reliability.</p>
+<p>Our strategically located hubs from New Orleans to Tampa ensure that whether it is a critical replacement part for an offshore rig or bulk supplies for a coastal factory, the delivery is seamless, documented, and on time.</p>
+</div>
+<div class="mt-12 flex items-center gap-12">
+<div class="h-16 w-px bg-outline-variant/30"></div>
+<p class="italic text-primary font-medium text-xl">"We don't just move boxes; we sustain the infrastructure that powers the Southern economy."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 bg-primary relative overflow-hidden">
+<!-- Decorative Background Element -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-surface-container-low/5 skew-x-12 translate-x-32"></div>
+<div class="max-w-screen-2xl mx-auto px-12 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-20">
+<div class="lg:col-span-5 text-white">
+<h2 class="text-5xl font-extrabold tracking-tighter mb-8">SECURE YOUR <br/>SUPPLY CHAIN.</h2>
+<p class="text-on-primary-container text-xl mb-12 max-w-sm">Ready to optimize your distribution? Connect with our logistics experts today.</p>
+<div class="space-y-10">
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl">location_on</span>
+<div>
+<h4 class="font-bold text-lg mb-1">HQ Distribution Center</h4>
+<p class="text-on-primary-container">1200 Maritime Blvd, Suite 400<br/>Mobile, AL 36602</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl">phone_in_talk</span>
+<div>
+<h4 class="font-bold text-lg mb-1">Direct Logistics Line</h4>
+<p class="text-on-primary-container">+1 (800) GULF-CORP<br/>Available 24/7</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl">mail</span>
+<div>
+<h4 class="font-bold text-lg mb-1">Inquiries</h4>
+<p class="text-on-primary-container">quotes@gulfcoast.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 bg-white p-12 md:p-16">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="text-xs font-label uppercase font-bold text-secondary">Full Name</label>
+<input class="bg-surface-container-high border-none border-b-2 border-primary/10 focus:border-primary focus:ring-0 py-4 font-body" placeholder="Johnathan Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs font-label uppercase font-bold text-secondary">Work Email</label>
+<input class="bg-surface-container-high border-none border-b-2 border-primary/10 focus:border-primary focus:ring-0 py-4 font-body" placeholder="j.doe@company.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs font-label uppercase font-bold text-secondary">Project Details</label>
+<select class="bg-surface-container-high border-none border-b-2 border-primary/10 focus:border-primary focus:ring-0 py-4 font-body">
+<option>New Distribution Partnership</option>
+<option>Specific Product Quote</option>
+<option>Logistics Consulting</option>
+<option>General Inquiry</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs font-label uppercase font-bold text-secondary">Your Message</label>
+<textarea class="bg-surface-container-high border-none border-b-2 border-primary/10 focus:border-primary focus:ring-0 py-4 font-body resize-none" placeholder="How can we help your operations today?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-white py-6 font-black uppercase tracking-widest hover:bg-on-background transition-colors">
+                                Submit Request
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-blue-950 dark:bg-black w-full border-t border-white/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="flex flex-col gap-6">
+<div class="text-xl font-bold text-white">Gulf Coast</div>
+<p class="text-slate-400 text-sm font-['Work_Sans'] leading-relaxed">
+                    Setting the standard for industrial distribution across the Gulf states since 1984. 
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-white transition-colors">public</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-white transition-colors">hub</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-white transition-colors">local_shipping</span>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="text-white font-bold text-sm uppercase tracking-widest">Explore</h5>
+<nav class="flex flex-col gap-4 font-['Work_Sans'] text-sm tracking-wide uppercase">
+<a class="text-slate-400 hover:text-white transition-colors hover:underline decoration-slate-500 underline-offset-4" href="#">Inventory</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:underline decoration-slate-500 underline-offset-4" href="#">Our Reach</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:underline decoration-slate-500 underline-offset-4" href="#">Compliance</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:underline decoration-slate-500 underline-offset-4" href="#">Safety</a>
+</nav>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="text-white font-bold text-sm uppercase tracking-widest">Resources</h5>
+<nav class="flex flex-col gap-4 font-['Work_Sans'] text-sm tracking-wide uppercase">
+<a class="text-slate-400 hover:text-white transition-colors hover:underline decoration-slate-500 underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:underline decoration-slate-500 underline-offset-4" href="#">Terms of Service</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:underline decoration-slate-500 underline-offset-4" href="#">Shipping Info</a>
+<a class="text-slate-400 hover:text-white transition-colors hover:underline decoration-slate-500 underline-offset-4" href="#">Locations</a>
+</nav>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="text-white font-bold text-sm uppercase tracking-widest">Newsletter</h5>
+<p class="text-slate-400 text-xs">Stay updated on industry trends and logistics insights.</p>
+<div class="flex">
+<input class="bg-white/5 border-white/10 text-white text-xs w-full focus:ring-1 focus:ring-white/20" placeholder="Email Address" type="email"/>
+<button class="bg-white text-blue-950 px-4 flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="w-full py-8 border-t border-white/5 px-12 max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="text-slate-500 text-xs uppercase tracking-widest">© 2024 Gulf Coast Distribution. All rights reserved.</span>
+<div class="flex gap-8 text-xs text-slate-500 uppercase tracking-widest">
+<span>Made for Industry</span>
+<span>ISO 9001 Certified</span>
+</div>
+</div>
+</footer>
+</body></html>
